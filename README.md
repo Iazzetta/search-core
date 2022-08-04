@@ -1,5 +1,5 @@
 # search-core
-Arquitetura do core do sistema de busca search.com.br
+Core do sistema de busca (search.com.br) com Docker, Typescript, Clean Architecture, Eslint para o build e Jest para os testes.
 
 ### Install & Run
 ```
