@@ -9,3 +9,5 @@ docker-compose up
 ```
 npm run test
 ```
+
+try: http://localhost:5000/search
