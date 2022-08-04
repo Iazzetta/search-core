@@ -1,18 +1,11 @@
 # search-core
 Arquitetura do core do sistema de busca search.com.br
-### Install
+
+### Install & Run
 ```
-npm install
-```
-### Build
-```
-npm run build
+docker-compose up
 ```
 ### Tests
 ```
 npm run test
-```
-### Run
-```
-npm start
 ```
