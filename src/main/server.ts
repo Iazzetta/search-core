@@ -7,8 +7,9 @@ const app = express()
 
 /* Routes */
 app.get('/search', async (req, res) => {
+    const search_text = req.query.q?.toString() || '';
     const controller = makeLoadSearchSiteController()
-    const httpResponse = await controller.handle('')
+    const httpResponse = await controller.handle(search_text)
     res.status(httpResponse.statusCode).json(httpResponse.data)
 });
   
