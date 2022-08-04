@@ -7,9 +7,6 @@ export class SearchSiteLoaderService implements SearchSiteLoader {
     constructor(private readonly loadSearchSiteRepository: LoadSearchSiteRepository) {}
     
     async load(text: string): Promise<Site[]> {
-        // if (!text) {
-        //     throw new MandatoryFieldError()
-        // }
         return this.loadSearchSiteRepository.loadSearchSite(text)
     }
 }
