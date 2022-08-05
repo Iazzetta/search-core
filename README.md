@@ -9,5 +9,10 @@ docker-compose up --build
 ```
 npm run test
 ```
+### API
+```
+    (GET) http://localhost:5000/search
+    (POST) http://localhost:5000/add
 
-try: http://localhost:5000/search
+    (GraphQL) http://localhost:5000/graphql
+```

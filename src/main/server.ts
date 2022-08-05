@@ -5,6 +5,7 @@ import { makeLoadSearchSiteController } from './factories/search-site';
 
 /* Third Party Imports */
 import express from 'express'
+import { apolloServer } from './apollo-server';
 
 /* Config Express */
 const app = express()
@@ -39,4 +40,7 @@ app.get('/search', async (req, res) => {
     res.status(httpResponse.statusCode).json(httpResponse.data)
 });
 
-app.listen(env.port, () => console.log(`Server running at .:${env.port}`))
+/* GraphQL */
+apolloServer(app)
+console.log(`GraphQL at http://localhost:${env.port}/graphql`)
+app.listen(env.port, () => console.log(`Server running at http://localhost:${env.port}`))
