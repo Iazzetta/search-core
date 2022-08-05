@@ -1,5 +1,5 @@
 # search-core
-Core do sistema de busca (search.com.br) com Docker, Typescript, Clean Architecture, Eslint para o build e Jest para os testes.
+Sistema de busca (search.com.br) utilizanod Clean Architecture com Node, Typescript, Eslint(Build), Jest(Tests) em um container no Docker
 
 ### Install & Run
 ```
