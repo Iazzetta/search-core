@@ -3,7 +3,7 @@ Sistema de busca (search.com.br) utilizanod Clean Architecture com Node, Typescr
 
 ### Install & Run
 ```
-docker-compose up
+docker-compose up --build
 ```
 ### Tests
 ```
