@@ -3,5 +3,6 @@ export type Site = {
     title: string
     description: string
     score: number
-    updatedAt: Date
+    createdAt: string
+    updatedAt: string
 }

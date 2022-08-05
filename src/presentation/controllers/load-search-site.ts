@@ -16,7 +16,8 @@ export class LoadSearchSiteController implements Controller {
                     title: item.title,
                     description: item.description,
                     score: item.score,
-                    updatedAt: item.updatedAt
+                    createdAt: new Date(item.createdAt),
+                    updatedAt: new Date(item.updatedAt),
                 }))
             }
         } catch (error: any) {

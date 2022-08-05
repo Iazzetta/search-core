@@ -8,8 +8,8 @@ RUN npm i
 
 COPY . .
 
+RUN npm run build
+
 FROM base as production
 
 ENV NODE_PATH=./dist
-
-RUN npm run build
