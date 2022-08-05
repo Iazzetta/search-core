@@ -2,7 +2,7 @@
   "name": "search-core",
   "type": "module",
   "version": "1.0.0",
-  "description": "Sistema de busca (search.com.br) utilizando Clean Architecture com Node, Typescript. Eslint para o build, Jest para testes e Docker.",
+  "description": "API de busca (search.com.br) utilizando Clean Architecture com Node, Typescript. Eslint para o build, Jest para testes e Docker.",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
