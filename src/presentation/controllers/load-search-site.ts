@@ -1,12 +1,12 @@
 import { SearchSiteLoader } from "../../domain/usecases/search-site";
-import { Controller } from "../contracts/controller";
+import { SearchController } from "../contracts/controller";
 import { HttpResponse } from "../contracts/http";
-import { SearchSiteViewModel } from "../view-models/site";
+import { SiteViewModel } from "../view-models/site";
 
-export class LoadSearchSiteController implements Controller {
+export class LoadSearchSiteController implements SearchController {
     constructor(private readonly searchSiteLoader: SearchSiteLoader) {}
 
-    async handle(text: string): Promise<HttpResponse<SearchSiteViewModel[]>> {
+    async handle(text: string): Promise<HttpResponse<SiteViewModel[]>> {
         try {
             const sites = await this.searchSiteLoader.load(text)
             return {
