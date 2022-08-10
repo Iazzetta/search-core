@@ -1,5 +1,5 @@
 # search-core
-API de busca (search.com.br) em com Node e Typescript. REST + Graphql e tests com Jest.
+Search Engine com Node e Typescript. REST + Graphql e tests com Jest.
 
 ### install, build and run
 ```
