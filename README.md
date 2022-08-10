@@ -1,5 +1,5 @@
 # search-core
-API de busca (search.com.br) utilizando Clean Architecture com Node, Typescript. API + GraphQL no Docker e testes com Jest.
+API de busca (search.com.br) em com Node e Typescript. REST + Graphql e tests com Jest.
 
 ### Install & Run
 ```
