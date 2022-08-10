@@ -19,3 +19,7 @@ docker-compose up --build
 ```
 npm run test
 ```
+
+### references
+
+- Clean Architecture / [Rodrigo Manguinho](https://github.com/rmanguinho)
