@@ -1,13 +1,13 @@
 # search-core
 API de busca (search.com.br) em com Node e Typescript. REST + Graphql e tests com Jest.
 
-### Install, Build and UP
+### install, build and run
 ```
 npm i
 docker-compose up --build
 ```
 
-### Usage
+### usage
 ```
     (GET) http://localhost:5000/search
     (POST) http://localhost:5000/add
@@ -15,7 +15,7 @@ docker-compose up --build
     (GraphQL) http://localhost:5000/graphql
 ```
 
-### Tests
+### tests
 ```
 npm run test
 ```
