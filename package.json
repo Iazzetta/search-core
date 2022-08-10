@@ -2,7 +2,7 @@
   "name": "search-core",
   "type": "module",
   "version": "1.0.0",
-  "description": "API de busca (search.com.br) utilizando Clean Architecture com Node, Typescript. API + GraphQL no Docker e testes com Jest.",
+  "description": "API de busca (search.com.br) em com Node e Typescript. REST + Graphql e tests com Jest.",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc -p .",
