@@ -1,11 +1,11 @@
 /* Internal Imports */
 import { env } from './config/env'
-import { makeLoadAddSiteController } from './factories/add-site';
-import { makeLoadSearchSiteController } from './factories/search-site';
 
 /* Third Party Imports */
 import express from 'express'
 import { apolloServer } from './apollo-server';
+import { makeLoadAddSiteControllerMongoDB } from './factories/mongodb/add-site';
+import { makeLoadSearchSiteControllerMongoDB } from './factories/mongodb/search-site';
 
 /* Config Express */
 const app = express()
@@ -23,7 +23,7 @@ app.post('/add', async (req, res) => {
     const url = req.body.url;
     const title = req.body.title;
     const description = req.body.description;
-    const controller = makeLoadAddSiteController()
+    const controller = makeLoadAddSiteControllerMongoDB()
     const httpResponse = await controller.handle(url, title, description)
     res.status(httpResponse.statusCode).json(httpResponse.data)
 });
@@ -35,7 +35,7 @@ app.post('/add', async (req, res) => {
  */
 app.get('/search', async (req, res) => {
     const search_text = req.query.q?.toString() || '';
-    const controller = makeLoadSearchSiteController()
+    const controller = makeLoadSearchSiteControllerMongoDB()
     const httpResponse = await controller.handle(search_text)
     res.status(httpResponse.statusCode).json(httpResponse.data)
 });

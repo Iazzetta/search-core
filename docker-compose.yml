@@ -14,3 +14,5 @@ services:
     ports:
       - '5000:5000'
     command: npm start
+    environment:
+      MONGODB_CONNECT: ${MONGODB_CONNECT}

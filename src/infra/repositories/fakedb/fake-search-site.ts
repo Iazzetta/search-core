@@ -1,6 +1,7 @@
-import { LoadSearchSiteRepository } from "../../datalayer/contracts/load-search-site";
-import { SiteModel } from "../../datalayer/models/site";
-import { fakeSites } from "../data-sources/sites";
+
+import { LoadSearchSiteRepository } from "../../../datalayer/contracts/load-search-site";
+import { SiteModel } from "../../../datalayer/models/site";
+import { fakeSites } from "../../data-sources/sites";
 
 export class FakeSearchSiteRepository implements LoadSearchSiteRepository {
     async loadSearchSite (text: any): Promise<SiteModel[]> {

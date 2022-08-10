@@ -1,5 +1,6 @@
 import { ApolloServer, gql } from 'apollo-server-express'
-import { makeLoadSearchSiteController } from './factories/search-site';
+import { makeLoadSearchSiteControllerMongoDB } from './factories/mongodb/search-site';
+
 
 const typeDefs = gql`
     type Query {
@@ -18,7 +19,7 @@ const typeDefs = gql`
 const resolvers = { 
     Query: {
         async sites (): Promise<any> {
-            const controller = makeLoadSearchSiteController()
+            const controller = makeLoadSearchSiteControllerMongoDB()
             const httpResponse = await controller.handle('')
             return httpResponse.data
         }

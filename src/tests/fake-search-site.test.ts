@@ -1,7 +1,7 @@
 import { fakeSites } from "../infra/data-sources/sites";
-import { makeLoadSearchSiteController } from "../main/factories/search-site";
+import { makeLoadSearchSiteController } from "../main/factories/fake/search-site";
 
-test('search sites status code and response', async () => {
+test('fake search sites status code and response', async () => {
     const controller = makeLoadSearchSiteController()
     const httpResponse = await controller.handle('')
     expect(httpResponse.statusCode).toBe(200);
@@ -12,7 +12,7 @@ test('search sites status code and response', async () => {
     })));
 });
 
-test('search sites status code and response with filter', async () => {
+test('fake search sites status code and response with filter', async () => {
     const controller = makeLoadSearchSiteController()
     const httpResponse = await controller.handle('rock')
     expect(httpResponse.statusCode).toBe(200);
